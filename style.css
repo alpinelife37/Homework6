@@ -3,7 +3,15 @@
 }
 
 body {
-  background-color: green;
+  background-color: black !important;
+}
+
+li {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-decoration: underline;
 }
 
 #mainHeader {
@@ -11,48 +19,47 @@ body {
   background-color: black;
   color: white;
   font-size: 60px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.btn-sq-sm {
-  width: 40px;
-  height: 40px;
-  font-size: 10px;
-  padding: none;
-  margin: none;
-}
-
-.fas {
-  color: white;
-}
-
-.searchArea {
-  margin-left: 115px;
 }
 
 #jumbotronBox {
   padding: 10px;
-  background-color: white;
-}
-
-.jumbotron {
-  width: 1220px;
-  height: 500px;
 }
 
 #infoCard {
   text-align: center;
-  height: 275px;
   font-size: medium;
 }
 
 #searchCol {
   background-color: rgb(245, 245, 245);
-  margin-left: 115px;
 }
 
 #infoCardHeader {
   font-weight: bolder;
   font-size: xx-large;
+}
+
+#forcastCard {
+  height: 220px;
+  width: 175px;
+  margin: 20px;
+  color: white;
+  background-color: blue;
+}
+
+h5 {
+  padding-left: 5px;
+  font-size: 40px !important;
+}
+
+h1 {
+  color: red;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.icon {
+  color: darkcyan;
 }

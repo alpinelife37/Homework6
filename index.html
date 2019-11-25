@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
     <title>Weather Dashboard</title>
   </head>
@@ -17,72 +23,119 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div>
       <div class="row">
-        <div id="searchCol" class="col-3">
+        <div class="card col-3">
           <div>
-            <h2>Search for a City</h2>
-            <form class="form-inline">
-              <div class="form-group mx-sm-3 mb-2">
-                <label for="inputPassword2" class="sr-only">Password</label>
-                <input class="form-control" />
-              </div>
-              <button type="button" class="btn btn-sq-sm btn-primary">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+            <h5>Search for a City</h5>
+            <div>
+              <form class="form-inline">
+                <div class="form-group mb-2 col-10">
+                  <input type="text" id="cityInput" />
+                </div>
+                <button id="findCity" type="submit" class="btn btn-info col-2">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
           </div>
           <div class="searchList">
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+            <ul id="list" class="list-group"></ul>
           </div>
         </div>
 
-        <div id="jumbotronBox" class="jumbotron">
-          <div class="card">
+        <div class="card col-9">
+          <div>
             <div id="infoCard" class="card-body infoCard text-left">
               <div>
                 <div id="infoCardHeader" class="row">
-                  <div id="city">City__</div>
-                  <div id="date">Date__</div>
-                  <div id="icon">Icon__</div>
+                  <div class="city"></div>
+                  <div class="date"></div>
+                  <div class="icon"></div>
                 </div>
                 <br />
-                <div id="temp">Temp</div>
+                <div class="temp">wind</div>
                 <br />
-                <div id="humidity">Humidity</div>
+                <div class="humidity">Humidity</div>
                 <br />
-                <div id="wind">Wind</div>
+                <div class="wind">Wind</div>
                 <br />
-                <div id="uv">UV</div>
-                <div></div>
-                <div></div>
+                <div class="uv">UV</div>
+              </div>
+              <h2>5-Day Forecast</h2>
+              <div class="row">
+                <div id="forcastCard" class="card">
+                  <div class="card-body">
+                    <h5 class="card-title1">Date</h5>
+                    <br />
+                    <div class="icon1">Icon</div>
+                    <br />
+                    <div class="temp1">temp</div>
+                    <br />
+                    <div class="humidity1">humidity</div>
+                  </div>
+                </div>
+                <div id="forcastCard" class="card">
+                  <div class="card-body">
+                    <h5 class="card-title2">Date</h5>
+                    <br />
+                    <div class="icon2">Icon</div>
+                    <br />
+                    <div class="temp2">temp</div>
+                    <br />
+                    <div class="humidity2">humidity</div>
+                  </div>
+                </div>
+                <div id="forcastCard" class="card">
+                  <div class="card-body">
+                    <h5 class="card-title3">Date</h5>
+                    <br />
+                    <div class="icon3">Icon</div>
+                    <br />
+                    <div class="temp3">temp</div>
+                    <br />
+                    <div class="humidity3">humidity</div>
+                  </div>
+                </div>
+                <div id="forcastCard" class="card">
+                  <div class="card-body">
+                    <h5 class="card-title4">Date</h5>
+                    <br />
+                    <div class="icon4">Icon</div>
+                    <br />
+                    <div class="temp4">temp</div>
+                    <br />
+                    <div class="humidity4">humidity</div>
+                  </div>
+                </div>
+                <div id="forcastCard" class="card">
+                  <div class="card-body">
+                    <h5 class="card-title5">Date</h5>
+                    <br />
+                    <div class="icon5">Icon</div>
+                    <br />
+                    <div class="temp5">temp</div>
+                    <br />
+                    <div class="humidity5">humidity</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <h2>5-Day Forecast</h2>
         </div>
       </div>
     </div>
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -94,5 +147,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/Javascript" src="script.js"></script>
   </body>
 </html>
