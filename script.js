@@ -37,7 +37,14 @@ $("#findCity").on("click", function(event) {
     $(".wind").text("Wind Speed: " + response.wind.speed);
     $(".humidity").text("Humidity: " + response.main.humidity);
     $(".temp").text("Temperature (F) " + response.main.temp);
-    console.log("weather", response);
+
+    ////////////////////////////////////////////Icon Call//////////////////////////////////////////////////
+    var icon = response.weather[0].icon;
+    var image = document.createElement("IMG");
+    image.alt = "weather icon";
+    image.setAttribute("class", "photo");
+    image.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+    $(".icon").html(image);
     ////////////////////////////////////////UVI Call///////////////////////////////////////////////////////////////
     var lat = response.coord.lat;
     var lon = response.coord.lon;
@@ -66,15 +73,5 @@ $("#findCity").on("click", function(event) {
     }).then(function(fiveDay) {
       console.log("fiveDay", fiveDay);
     });
-    ////////////////////////////////////////////Icon Call//////////////////////////////////////////////////
-    // var icon = response.weather[0].icon;
-    // var queryIcon = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
-    // $.ajax({
-    //   url: queryIcon,
-    //   method: "GET"
-    // }).then(function(iconImage) {
-    //   $(".icon").iconImage(iconImage);
-    //   console.log("iconImage", iconImage);
-    // });
   });
 });
