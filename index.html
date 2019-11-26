@@ -21,92 +21,96 @@
           <h1 id="mainHeader">Weather DashBoard</h1>
         </div>
       </div>
-    </div>
 
-    <div>
-      <div class="row">
-        <div class="card col-3">
-          <div>
-            <h5>Search for a City</h5>
+      <div>
+        <div class="row">
+          <div class="card col-3">
             <div>
-              <form class="form-inline">
-                <div class="form-group mb-2 col-10">
-                  <input type="text" id="cityInput" />
-                </div>
-                <button id="findCity" type="submit" class="btn btn-info col-2">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
+              <h5>Search for a City</h5>
+              <div>
+                <form class="form-inline">
+                  <div class="form-group mb-2 col-10">
+                    <input type="text" id="cityInput" />
+                  </div>
+                  <button
+                    id="findCity"
+                    type="submit"
+                    class="btn btn-info col-2"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="searchList">
+              <ul id="list" class="list-group"></ul>
             </div>
           </div>
-          <div class="searchList">
-            <ul id="list" class="list-group"></ul>
-          </div>
-        </div>
 
-        <div class="card col-9">
-          <div>
-            <div id="infoCard" class="card-body infoCard text-left">
-              <div>
-                <div id="infoCardHeader" class="row">
-                  <div class="city"></div>
-                  <div class="date"></div>
-                  <div class="icon"></div>
-                </div>
-                <br />
-                <div class="temp">wind</div>
-                <br />
-                <div class="humidity">Humidity</div>
-                <br />
-                <div class="wind">Wind</div>
-                <br />
-                <div class="uv">UV</div>
-              </div>
-              <h2>5-Day Forecast</h2>
-              <div class="row">
-                <div id="forcastCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title1"></h5>
-                    <div class="icon1"></div>
-                    <div class="temp1"></div>
-                    <br />
-                    <div class="humidity1"></div>
+          <div class="card col-9">
+            <div>
+              <div id="infoCard" class="card-body infoCard text-left">
+                <div>
+                  <div id="infoCardHeader" class="row">
+                    <div class="city"></div>
+                    <div class="date"></div>
+                    <div class="icon"></div>
                   </div>
+                  <br />
+                  <div class="temp">wind</div>
+                  <br />
+                  <div class="humidity">Humidity</div>
+                  <br />
+                  <div class="wind">Wind</div>
+                  <br />
+                  <div class="uv">UV</div>
                 </div>
-                <div id="forcastCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title2"></h5>
-                    <div class="icon2"></div>
-                    <div class="temp2"></div>
-                    <br />
-                    <div class="humidity2"></div>
+                <h2>5-Day Forecast</h2>
+                <div class="row">
+                  <div id="forcastCard" class="card">
+                    <div class="card-body">
+                      <h5 class="card-title1"></h5>
+                      <div class="icon1"></div>
+                      <div class="temp1"></div>
+                      <br />
+                      <div class="humidity1"></div>
+                    </div>
                   </div>
-                </div>
-                <div id="forcastCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title3"></h5>
-                    <div class="icon3"></div>
-                    <div class="temp3"></div>
-                    <br />
-                    <div class="humidity3"></div>
+                  <div id="forcastCard" class="card">
+                    <div class="card-body">
+                      <h5 class="card-title2"></h5>
+                      <div class="icon2"></div>
+                      <div class="temp2"></div>
+                      <br />
+                      <div class="humidity2"></div>
+                    </div>
                   </div>
-                </div>
-                <div id="forcastCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title4"></h5>
-                    <div class="icon4"></div>
-                    <div class="temp4"></div>
-                    <br />
-                    <div class="humidity4"></div>
+                  <div id="forcastCard" class="card">
+                    <div class="card-body">
+                      <h5 class="card-title3"></h5>
+                      <div class="icon3"></div>
+                      <div class="temp3"></div>
+                      <br />
+                      <div class="humidity3"></div>
+                    </div>
                   </div>
-                </div>
-                <div id="forcastCard" class="card">
-                  <div class="card-body">
-                    <h5 class="card-title5"></h5>
-                    <div class="icon5"></div>
-                    <div class="temp5"></div>
-                    <br />
-                    <div class="humidity5"></div>
+                  <div id="forcastCard" class="card">
+                    <div class="card-body">
+                      <h5 class="card-title4"></h5>
+                      <div class="icon4"></div>
+                      <div class="temp4"></div>
+                      <br />
+                      <div class="humidity4"></div>
+                    </div>
+                  </div>
+                  <div id="forcastCard" class="card">
+                    <div class="card-body">
+                      <h5 class="card-title5"></h5>
+                      <div class="icon5"></div>
+                      <div class="temp5"></div>
+                      <br />
+                      <div class="humidity5"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -121,22 +125,17 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    <!-- <script
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script type="text/Javascript" src="script.js"></script>
   </body>
