@@ -63,7 +63,7 @@ $("#findCity").on("click", function(event) {
     });
     ////////////////////////////////////////////Five Day Weather Call///////////////////////////////////////
     var queryURLFiveDay =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&units=imperial&appid=" +
       APIKey;
@@ -100,7 +100,7 @@ $("#findCity").on("click", function(event) {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon3").html(image1);
       /////////////////////////////Day 4 ///////////////////////////////////////////////
       $(".card-title4").text(fiveDay.list[27].dt_txt);
