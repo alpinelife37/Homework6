@@ -36,7 +36,7 @@ li {
 
 #infoCardHeader {
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: 40px;
 }
 
 #forcastCard {
@@ -50,10 +50,6 @@ li {
 h5 {
   padding-left: 5px;
   font-size: 40px !important;
-}
-
-h1 {
-  color: red;
 }
 
 .btn {
@@ -87,4 +83,12 @@ h1 {
 
 .card-title5 {
   font-size: 20px !important;
+}
+
+.date {
+  font-size: 40px;
+}
+
+.date {
+  font-size: 40px !important;
 }

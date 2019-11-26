@@ -33,7 +33,7 @@ $("#findCity").on("click", function(event) {
     url: queryURLWeather,
     method: "GET"
   }).then(function(response) {
-    $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+    $(".city").text(response.name + " Weather Details---");
     $(".wind").text("Wind Speed: " + response.wind.speed);
     $(".humidity").text("Humidity: " + response.main.humidity);
     $(".temp").text("Temperature (F) " + response.main.temp);
@@ -141,7 +141,7 @@ $("#list").on("click", "li", function() {
     url: queryURLWeather,
     method: "GET"
   }).then(function(response) {
-    $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+    $(".city").html(response.name + " Weather Details---");
     $(".wind").text("Wind Speed: " + response.wind.speed);
     $(".humidity").text("Humidity: " + response.main.humidity);
     $(".temp").text("Temperature (F) " + response.main.temp);
