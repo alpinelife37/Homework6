@@ -43,13 +43,13 @@ $("#findCity").on("click", function(event) {
     var image1 = document.createElement("IMG");
     image1.alt = "weather icon";
     image1.setAttribute("class", "photo");
-    image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+    image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     $(".icon").html(image1);
     ////////////////////////////////////////UVI Call///////////////////////////////////////////////////////////////
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     var queryURLUVI =
-      "http://api.openweathermap.org/data/2.5/uvi?&appid=" +
+      "https://api.openweathermap.org/data/2.5/uvi?&appid=" +
       APIKey +
       "&lat=" +
       lat +
@@ -80,7 +80,7 @@ $("#findCity").on("click", function(event) {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon1").html(image1);
       /////////////////////////Day 2 ////////////////////////////////////////////////
       $(".card-title2").text(fiveDay.list[11].dt_txt);
@@ -90,7 +90,7 @@ $("#findCity").on("click", function(event) {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon2").html(image1);
       ////////////////////////////Day 3 ///////////////////////////////////////////////////
       $(".card-title3").text(fiveDay.list[19].dt_txt);
@@ -110,7 +110,7 @@ $("#findCity").on("click", function(event) {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon4").html(image1);
       /////////////////////////Day 5 /////////////////////////////////////////////////
       $(".card-title5").text(fiveDay.list[35].dt_txt);
@@ -120,7 +120,7 @@ $("#findCity").on("click", function(event) {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon5").html(image1);
     });
   });
@@ -151,13 +151,13 @@ $("#list").on("click", "li", function() {
     var image1 = document.createElement("IMG");
     image1.alt = "weather icon";
     image1.setAttribute("class", "photo");
-    image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+    image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     $(".icon").html(image1);
     ////////////////////////////////////////UVI Call///////////////////////////////////////////////////////////////
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     var queryURLUVI =
-      "http://api.openweathermap.org/data/2.5/uvi?&appid=" +
+      "https://api.openweathermap.org/data/2.5/uvi?&appid=" +
       APIKey +
       "&lat=" +
       lat +
@@ -171,7 +171,7 @@ $("#list").on("click", "li", function() {
     });
     ////////////////////////////////////////////Five Day Weather Call///////////////////////////////////////
     var queryURLFiveDay =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city1 +
       "&units=imperial&appid=" +
       APIKey;
@@ -188,7 +188,7 @@ $("#list").on("click", "li", function() {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon1").html(image1);
       /////////////////////////Day 2 ////////////////////////////////////////////////
       $(".card-title2").text(fiveDay.list[11].dt_txt);
@@ -198,7 +198,7 @@ $("#list").on("click", "li", function() {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon2").html(image1);
       ////////////////////////////Day 3 ///////////////////////////////////////////////////
       $(".card-title3").text(fiveDay.list[19].dt_txt);
@@ -208,7 +208,7 @@ $("#list").on("click", "li", function() {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon3").html(image1);
       /////////////////////////////Day 4 ///////////////////////////////////////////////
       $(".card-title4").text(fiveDay.list[27].dt_txt);
@@ -218,7 +218,7 @@ $("#list").on("click", "li", function() {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon4").html(image1);
       /////////////////////////Day 5 /////////////////////////////////////////////////
       $(".card-title5").text(fiveDay.list[35].dt_txt);
@@ -228,7 +228,7 @@ $("#list").on("click", "li", function() {
       var image1 = document.createElement("IMG");
       image1.alt = "weather icon";
       image1.setAttribute("class", "photo1");
-      image1.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+      image1.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       $(".icon5").html(image1);
     });
   });
